@@ -1,0 +1,15 @@
+#include<stdio.h>      				 //載入標頭檔 
+#include<stdlib.h>
+int main(void){
+	int Year;    					//建立int year變數 
+	printf("請輸入年份");
+	scanf("%d",&Year);				//輸入year變數 
+									//判斷是否為閏年 不是為平年 
+	if((Year%4==00&&Year%100!=0)|Year%400==0) { 
+				printf("閏年");
+			}
+			else {
+				printf("平年");
+			}
+			
+}
